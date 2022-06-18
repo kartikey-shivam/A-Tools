@@ -1,0 +1,24 @@
+.navbar {
+  height: 8vh;
+  //   background-color: aqua;
+  display: flex;
+  position: relative;
+  border-bottom: 1px solid black;
+  &_logo {
+    // text-transform: uppercase;
+    font-weight: 900;
+    display: flex;
+    align-items: center;
+    color: rgb(4, 48, 71);
+    padding: 1rem;
+    @include respond(tab-land) {
+      font-weight: 700;
+    }
+    &_span {
+      color: red;
+      font-weight: 400;
+    }
+  }
+  @include respond(tab-land) {
+  }
+}
